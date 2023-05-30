@@ -54,7 +54,6 @@ func Handler(h interface{}, status int, options ...func(*Route)) gin.HandlerFunc
 			opt(r)
 		}
 		if ok {
-			r := &Route{}
 			r.defaultStatusCode = status
 			r.handler = hv
 			r.handlerType = ht
